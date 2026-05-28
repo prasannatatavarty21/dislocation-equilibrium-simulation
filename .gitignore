@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Ignore large generated data files
+*.csv
+*.xlsx
+
+# Ignore local copies of paper/drafts
+*.pdf
