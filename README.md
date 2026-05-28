@@ -21,7 +21,7 @@ The code is designed to evaluate multiple spatial arrangements, specifically not
 
 ## ⚙️ Mathematical & Computational Framework
 
-To ensure high performance across large parameter sweeps (sweeping through various misorientation angles $\omega$, eigenstrains $\epsilon^*$, and initial dislocation positions $\bar{d}$), the code includes several optimizations:
+To ensure high performance across large parameter sweeps (sweeping through various misorientation angles $\omega$, eigenstrains $\varepsilon^*$, and initial dislocation positions $\bar{d}$), the code includes several optimizations:
 * **Gauss-Legendre Quadrature:** The complex area-under-the-curve (AUC) interaction integrals are approximated using multi-point Gaussian quadrature rather than continuous integration.
 * **Symmetry Caching:** Numerical integration of the auxiliary tensor caches mathematically identical tensor components to drastically reduce solver time.
 * **Global Tensor Pre-computation:** The isotropic stiffness tensor ($C_{ijkl}$) is initialized globally.
@@ -39,7 +39,7 @@ The simulation is built in Python 3. You will need the following libraries to ru
 You can install the dependencies via pip:
 ```bash
 pip install numpy scipy matplotlib tqdm
-
+```
 ## 🚀 Usage
 
 The main script is set up for headless execution (no GUI popups), making it ideal for both local machines and high-performance computing (HPC) clusters.
